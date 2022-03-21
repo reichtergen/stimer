@@ -18,7 +18,10 @@ static DWORD WINAPI timer_process(stimer_t *timer) {
     while (timer->state) {
 
         Sleep(timer->tick);
-        
+
+        if (!timer->state) 
+            break;
+
         timer->call_back(); 
     }
 
