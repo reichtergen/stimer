@@ -30,6 +30,6 @@ int main( void ) {
     stop_timer(&timer2);
     printf("**** timer stopped! ****\n");
 
-    getchar(); 
+    //getchar(); 
     return 0;
 }
